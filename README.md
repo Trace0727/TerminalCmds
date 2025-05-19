@@ -6,10 +6,12 @@ A C-based console program that mimics basic DOS shell commands (`cd`, `dir`, `ty
 
 ## Project Structure
 
-    TerminalCmds/
-    ├── src/
-    │   └── TerminalCmds.c
-    └── 
+```
+TerminalCmds/
+├── src/
+│   └── TerminalCmds.c
+└──
+```
 
 ---
 
@@ -28,6 +30,21 @@ Implements the entire command-line interface:
   - `help`: prints a list of supported commands and their descriptions
   - `exit`: cleanly stops the program in IDEs
   - `Ctrl+C` signal handling using `SIGINT` to print `program exited` and terminate
+
+---
+
+## How to Run
+
+### From the terminal
+```bash
+gcc src/TerminalCmds.c -o terminal_cmds
+./terminal_cmds
+```
+
+### From an IDE
+1. Open the `TerminalCmds.c` file in your C IDE (e.g., Code::Blocks, CLion, or VS Code with C extension).
+2. Build and run the file.
+3. Use the prompt to enter supported commands like `help`, `dir`, `cd`, etc.
 
 ---
 
